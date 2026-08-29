@@ -1,69 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration Form</title>
 </head>
+
 <body>
-     <header>
-            <nav>
-                <table cellpadding = "20" >
-                    <tbody >
-                        <tr>
-                            <td><h1><img src="https://www.careerbridgeit.com/_next/image?url=%2Fimages%2Fcb-new-nav-logo.png&w=750&q=75" height="60" width="200"></h1></td>
 
-                            <td ><a href="index.html" style="text-decoration: none;">HOME</a></td>
-                            <td><a href="" style="text-decoration: none;">ABOUT US</a></td>
-                            <td><a href="" style="text-decoration: none;">COURSES</a></td>
-                            <td><a href="" style="text-decoration: none;">SERVICES</a></td>
-                            <td><a href="" style="text-decoration: none;">PLACEMENTS</a></td>
-                            <td><a href="" style="text-decoration: none;">BLOG</a></td>
-                            <td><a href="" style="text-decoration: none;">CONTACT US</a></td>
-                            <td width="150"></td>
-                            <td><a href="login.html" style="text-decoration: none;">LOGIN</a></td>
-                            <td><a href="register.html" style="text-decoration: none;">REGISTER</a></td>
+    <!-- Header -->
+    <header>
+        <nav>
+            <table cellpadding="20">
+                <tbody>
+                    <tr>
 
-                            
-                            
-                        </tr>
-                    </tbody>
-                </table>
-            </nav>
-        </header>
+                        <td>
+                            <h1>
+                                <img src="https://www.careerbridgeit.com/_next/image?url=%2Fimages%2Fcb-new-nav-logo.png&w=750&q=75"
+                                    height="60" width="200">
+                            </h1>
+                        </td>
+
+                        <td>
+                            <a href="index.html" style="text-decoration: none;">HOME</a>
+                        </td>
+
+                        <td>
+                            <a href="" style="text-decoration: none;">ABOUT US</a>
+                        </td>
+
+                        <td>
+                            <a href="" style="text-decoration: none;">COURSES</a>
+                        </td>
+
+                        <td>
+                            <a href="" style="text-decoration: none;">SERVICES</a>
+                        </td>
+
+                        <td>
+                            <a href="" style="text-decoration: none;">PLACEMENTS</a>
+                        </td>
+
+                        <td>
+                            <a href="" style="text-decoration: none;">BLOG</a>
+                        </td>
+
+                        <td>
+                            <a href="" style="text-decoration: none;">CONTACT US</a>
+                        </td>
+
+                        <td width="150"></td>
+
+                        <td>
+                            <a href="login.html" style="text-decoration: none;">LOGIN</a>
+                        </td>
+
+                        <td>
+                            <a href="register.html" style="text-decoration: none;">REGISTER</a>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </nav>
+    </header>
+
+
+    <!-- Registration Form Heading -->
+
+    <marquee direction="right" behavior="alternate">
+        <h1>Registration Form</h1>
+    </marquee>
+
+
+    <!-- Registration Form -->
+
     <fieldset>
-        <legend>registration Form</legend>
+
+        <legend>
+            <b>Registration Form</b>
+        </legend>
+
         <form action="login.html">
-            <label for=""><B>USERNAME : </B></label>
-            <input type="text" required placeholder="Enter the username" title="username entering box">
-            <br><br>
-            <label for=""><b>PASSWORD : </b></label>
-            <input type="password" required placeholder="Enter the password" title="password entering box">
-            <br><br>
-            <label for=""><b>Email : </b></label>
-            <input type="email" required placeholder="Enter email">
-            <br><br>
-            <label for=""><b>Age</b></label>
-            <input type="number"  required placeholder="Enter age">
-            <br><br>
-            <label for=""><B>DATE OF BIRTH : </B> </label>
-            <input type="date" required >
-            <br> <br>
-            <label for=""><b>GENDER : </b></label>
-            <input type="radio"  name  = "gender">Male
-            <input type="radio"name = "gender" >Female
-            <input type="radio" name = "gender" >Others
-            <br><br>
-            <label for=""><b>Upload Photo : </b></label>
-            <input type="file">
-            <br><br>
-            <input type="checkbox"> i Agree that the above information is correct
-            <br><br>
-            <button type="submit">Register</button>
-            <button type="reset">reset</button>
+
+            <table cellpadding="10">
+
+                <tbody>
+
+                    <!-- Full Name -->
+                    <tr>
+                        <td>
+                            <label for="fullname">
+                                <b>FULL NAME :</b>
+                            </label>
+                        </td>
+
+                        <td>
+                            <input type="text"
+                                   id="fullname"
+                                   name="fullname"
+                                   placeholder="Enter your full name"
+                                   required>
+                        </td>
+                    </tr>
+
+
+                    <!-- Email -->
+                    <tr>
+                        <td>
+                            <label for="email">
+                                <b>EMAIL :</b>
+                            </label>
+                        </td>
+
+                        <td>
+                            <input type="email"
+                                   id="email"
+                                   name="email"
+                                   placeholder="Enter your email"
+                                   required>
+                        </td>
+                    </tr>
+
+
+                    <!-- Password -->
+                    <tr>
+                        <td>
+                            <label for="password">
+                                <b>PASSWORD :</b>
+                            </label>
+                        </td>
+
+                        <td>
+                            <input type="password"
+                                   id="password"
+                                   name="password"
+                                   placeholder="Enter your password"
+                                   required>
+                        </td>
+                    </tr>
+
+
+                    <!-- Confirm Password -->
+                    <tr>
+                        <td>
+                            <label for="confirmPassword">
+                                <b>CONFIRM PASSWORD :</b>
+                            </label>
+                        </td>
+
+                        <td>
+                            <input type="password"
+                                   id="confirmPassword"
+                                   name="confirmPassword"
+                                   placeholder="Confirm your password"
+                                   required>
+                        </td>
+                    </tr>
+
+
+                    <!-- Gender -->
+                    <tr>
+                        <td>
+                            <label>
+                                <b>GENDER :</b>
+                            </label>
+                        </td>
+
+                        <td>
+                            <input type="radio"
+                                   id="male"
+                                   name="gender"
+                                   value="Male"
+                                   required>
+                            <label for="male">Male</label>
+
+                            <input type="radio"
+                                   id="female"
+                                   name="gender"
+                                   value="Female">
+                            <label for="female">Female</label>
+
+                            <input type="radio"
+                                   id="others"
+                                   name="gender"
+                                   value="Others">
+                            <label for="others">Others</label>
+                        </td>
+                    </tr>
+
+
+                    <!-- Skills -->
+                    <tr>
+                        <td>
+                            <label>
+                                <b>SKILLS :</b>
+                            </label>
+                        </td>
+
+                        <td>
+                            <input type="checkbox"
+                                   name="skills"
+                                   value="HTML">
+                            HTML
+
+                            <input type="checkbox"
+                                   name="skills"
+                                   value="CSS">
+                            CSS
+
+                            <input type="checkbox"
+                                   name="skills"
+                                   value="JavaScript">
+                            JavaScript
+
+                            <input type="checkbox"
+                                   name="skills"
+                                   value="Python">
+                            Python
+                        </td>
+                    </tr>
+
+
+                    <!-- Age -->
+                    <tr>
+                        <td>
+                            <label for="age">
+                                <b>AGE :</b>
+                            </label>
+                        </td>
+
+                        <td>
+                            <input type="number"
+                                   id="age"
+                                   name="age"
+                                   placeholder="Enter your age"
+                                   min="1"
+                                   max="100"
+                                   required>
+                        </td>
+                    </tr>
+
+
+                    <!-- DOB -->
+                    <tr>
+                        <td>
+                            <label for="dob">
+                                <b>DATE OF BIRTH :</b>
+                            </label>
+                        </td>
+
+                        <td>
+                            <input type="date"
+                                   id="dob"
+                                   name="dob"
+                                   required>
+                        </td>
+                    </tr>
+
+
+                    <!-- Location -->
+                    <tr>
+                        <td>
+                            <label for="location">
+                                <b>LOCATION :</b>
+                            </label>
+                        </td>
+
+                        <td>
+                            <select id="location"
+                                    name="location"
+                                    required>
+
+                                <option value="">
+                                    -- Select Location --
+                                </option>
+
+                                <option value="Hyderabad">
+                                    Hyderabad
+                                </option>
+
+                                <option value="Bangalore">
+                                    Bangalore
+                                </option>
+
+                                <option value="Chennai">
+                                    Chennai
+                                </option>
+
+                                <option value="Mumbai">
+                                    Mumbai
+                                </option>
+
+                                <option value="Delhi">
+                                    Delhi
+                                </option>
+
+                                <option value="Pune">
+                                    Pune
+                                </option>
+
+                            </select>
+                        </td>
+                    </tr>
+
+
+                    <!-- Upload Resume -->
+                    <tr>
+                        <td>
+                            <label for="resume">
+                                <b>UPLOAD RESUME :</b>
+                            </label>
+                        </td>
+
+                        <td>
+                            <input type="file"
+                                   id="resume"
+                                   name="resume"
+                                   accept=".pdf,.doc,.docx"
+                                   required>
+                        </td>
+                    </tr>
+
+
+                    <!-- Introduction -->
+                    <tr>
+                        <td>
+                            <label for="intro">
+                                <b>INTRO ABOUT YOURSELF :</b>
+                            </label>
+                        </td>
+
+                        <td>
+                            <textarea id="intro"
+                                      name="intro"
+                                      rows="6"
+                                      cols="40"
+                                      placeholder="Write something about yourself..."
+                                      required></textarea>
+                        </td>
+                    </tr>
+
+
+                    <!-- Terms and Conditions -->
+                    <tr>
+                        <td></td>
+
+                        <td>
+                            <input type="checkbox"
+                                   id="agree"
+                                   name="agree"
+                                   required>
+
+                            <label for="agree">
+                                I agree that the above information is correct.
+                            </label>
+                        </td>
+                    </tr>
+
+
+                    <!-- Buttons -->
+                    <tr>
+                        <td></td>
+
+                        <td>
+                            <button type="submit">
+                                Register
+                            </button>
+
+                            <button type="reset">
+                                Reset
+                            </button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
         </form>
-        <p>Already have an account..then click here to login <a href="login.html">register</a></p>
-        navigate to about page... <a href="index.html">about</a>
+
     </fieldset>
+
+
+    <!-- Login Link -->
+
+    <p>
+        Already have an account?
+        <a href="login.html">Click here to Login</a>
+    </p>
+
 </body>
+
 </html>
