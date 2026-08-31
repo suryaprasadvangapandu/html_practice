@@ -7,7 +7,7 @@
     <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNocyWqL34FQ-LNpOEs6Euz-0OZ2H9haEwQBlMWV7MKA&s=10" sizes = "16*16">
     <style>
         
-        ul{
+        #nav-links{
             display: flex;
             align-items: center;
             justify-content:space-around;
@@ -16,7 +16,7 @@
 
         }
 
-        li{
+        #nav-links li{
             list-style: none;
             
             
@@ -33,10 +33,16 @@
         nav{
             width: 80%;
             margin: 20px auto;
+            border-radius: 100px;
+            border: solid darkslategrey;
         }
+        body{
+            background-color: lightyellow;
+        }
+        
     </style>
 </head>
-<body style="background-color:#F8FAFC;">
+<body>
     <!-- <marquee behavior="alternate" direction="down" scrollamount = "30" style="height: 500px ; width: 500px ; background-color: aqua;">
         <h2>Career bridge</h2>
     </marquee> -->
@@ -52,10 +58,10 @@
         </div> -->
         <header>
             <nav style="background-color:beige" border-radius: 100px;>
-                <ul>
+                <ul id="nav-links">
                     <li ><h1><img src="https://www.careerbridgeit.com/_next/image?url=%2Fimages%2Fcb-new-nav-logo.png&w=750&q=75" height="50" width="200" border:none></h1></li>
                     <li style="border-radius: 100px;"><button><a href="" style="text-decoration: none;">ABOUT US</a></button></li>
-                    <li><button><a href="" style="text-decoration: none;">COURSES</a></button></li>
+                    <li><button><a href="task.html" style="text-decoration: none;">📝TASKS✍️</a></button></li>
                     <li><button><a href="" style="text-decoration: none;">SERVICES</a></button></li>
                     <li><button><a href="" style="text-decoration: none;">PLACEMENTS</a></button></li>
                     <li><button><a href="" style="text-decoration: none;">BLOG</a></button></li>
@@ -88,25 +94,42 @@
             </nav>
         </header>
 
-        <marquee behavior="" direction="" scrollamount = "20">
+
+
+
+
+        <div>
+            <marquee behavior="" direction="" scrollamount = "20">
             <h3 style="color: red;">🪪it is mandatory to wear ID card with in the Institute</h3>
         </marquee>
-        <marquee behavior="" direction="" scrollamount = "10">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNocyWqL34FQ-LNpOEs6Euz-0OZ2H9haEwQBlMWV7MKA&s=10" alt="">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_B_bx_7IrWoxaaD2iKZu_LRx76tIjaIdO5D4YOA3Mqg&s=10" height= 260 width="250">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRG5127hPKaXfkQSZgJsnPcvoYQKxYRxV2oWM-6Z_uZA&s=10"height= 260 width="250">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRG5127hPKaXfkQSZgJsnPcvoYQKxYRxV2oWM-6Z_uZA&s=10"height= 260 width="250">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRG5127hPKaXfkQSZgJsnPcvoYQKxYRxV2oWM-6Z_uZA&s=10"height= 260 width="250">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRG5127hPKaXfkQSZgJsnPcvoYQKxYRxV2oWM-6Z_uZA&s=10"height= 260 width="250">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRG5127hPKaXfkQSZgJsnPcvoYQKxYRxV2oWM-6Z_uZA&s=10"height= 260 width="250">
-        </marquee>
-        <hr color="green">
+        
+        </div>
+
+        <div id="vertical-scroll" style="float: right;">
+            <marquee behavior="" direction="down" scrollamount = "30">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNocyWqL34FQ-LNpOEs6Euz-0OZ2H9haEwQBlMWV7MKA&s=10" alt=""> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+                <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_B_bx_7IrWoxaaD2iKZu_LRx76tIjaIdO5D4YOA3Mqg&s=10" height= 260 width="250"> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRG5127hPKaXfkQSZgJsnPcvoYQKxYRxV2oWM-6Z_uZA&s=10"height= 260 width="250"> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRG5127hPKaXfkQSZgJsnPcvoYQKxYRxV2oWM-6Z_uZA&s=10"height= 260 width="250"> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRG5127hPKaXfkQSZgJsnPcvoYQKxYRxV2oWM-6Z_uZA&s=10"height= 260 width="250"> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRG5127hPKaXfkQSZgJsnPcvoYQKxYRxV2oWM-6Z_uZA&s=10"height= 260 width="250"> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRG5127hPKaXfkQSZgJsnPcvoYQKxYRxV2oWM-6Z_uZA&s=10"height= 260 width="250"> <br>
+            </marquee>
+        </div>
+
+
+
+
+
+
+
+        <!-- <hr color="green">
         <h1>TASKS.....</h1>
         <a href="task.html"><b>27/08/2026</b></a>
         <P>Task: 
@@ -127,7 +150,7 @@
 
 -> Top of the Form use a Headline as Registration Form with h1-heading and that needs to move alternatively from left-right
 
-        </P>
+        </P> -->
         <hr color="green">
         
         <ul style="color:rgb(0, 123, 255);">

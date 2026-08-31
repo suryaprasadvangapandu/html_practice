@@ -32,6 +32,12 @@
         nav{
             width: 80%;
             margin: 20px auto;
+            border-radius: 100px;
+            border: solid darkslategrey;
+        }
+        
+        body{
+            background-color: lightyellow;
         }
     </style>
 </head>
@@ -41,7 +47,7 @@
                 <ul>
                     <li ><h1><img src="https://www.careerbridgeit.com/_next/image?url=%2Fimages%2Fcb-new-nav-logo.png&w=750&q=75" height="50" width="200" border:none></h1></li>
                     <li style="border-radius: 100px;"><button><a href="index.html" style="text-decoration: none;">ABOUT US</a></button></li>
-                    <li><button><a href="" style="text-decoration: none;">COURSES</a></button></li>
+                    <li><button><a href="task.html" style="text-decoration: none;">📝TASKS✍️</a></button></li>
                     <li><button><a href="" style="text-decoration: none;">SERVICES</a></button></li>
                     <li><button><a href="" style="text-decoration: none;">PLACEMENTS</a></button></li>
                     <li><button><a href="" style="text-decoration: none;">BLOG</a></button></li>
@@ -117,3 +123,321 @@
     navigate to about page... <a href="index.html">about</a>
 </body>
 </html>
+
+<br>
+<br><br><br>
+
+<!------------------------ TASK 2 BEGIN ----------------------->
+<P style="color: red;">
+            Task:
+========
+-> Create a Registration Form with table tag where each row represents one label and input element.
+
+-> Fields must be Full Name, Email, Password, Confirm Password, Gender, Skills, Age, DOB (Date), Location (Dropdown Menu), Upload Resume (FileInput), Intro about yourself (textarea), submit button and reset button.
+
+-> Fields are required data to submit otherwise rejects the submission
+
+-> Top of the Form use a Headline as Registration Form with h1-heading and that needs to move alternatively from left-right
+
+        </P>
+
+
+
+        <!-- Registration Form Heading -->
+
+    <marquee direction="right" behavior="alternate">
+        <h1>Registration Form</h1>
+    </marquee>
+
+
+    <!-- Registration Form -->
+
+    <fieldset style="margin: 50px auto;background-color:beige; width: 600px;padding: 40px; border: 30px beige;">
+
+        <legend>
+            <b>Registration Form</b>
+        </legend>
+
+        <form action="login.html">
+
+            <table cellpadding="10">
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="fullname">
+                                <b>FULL NAME :</b>
+                            </label>
+                        </td>
+
+                        <td>
+                            <input type="text"
+                                   id="fullname"
+                                   name="fullname"
+                                   placeholder="Enter your full name"
+                                   required>
+                        </td>
+                    </tr>
+
+
+                    <!-- Email -->
+                    <tr>
+                        <td>
+                            <label for="email">
+                                <b>EMAIL :</b>
+                            </label>
+                        </td>
+
+                        <td>
+                            <input type="email"
+                                   id="email"
+                                   name="email"
+                                   placeholder="Enter your email"
+                                   required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">
+                                <b>PASSWORD :</b>
+                            </label>
+                        </td>
+
+                        <td>
+                            <input type="password"
+                                   id="password"
+                                   name="password"
+                                   placeholder="Enter your password"
+                                   required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="confirmPassword">
+                                <b>CONFIRM PASSWORD :</b>
+                            </label>
+                        </td>
+
+                        <td>
+                            <input type="password"
+                                   id="confirmPassword"
+                                   name="confirmPassword"
+                                   placeholder="Confirm your password"
+                                   required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>
+                                <b>GENDER :</b>
+                            </label>
+                        </td>
+
+                        <td>
+                            <input type="radio"
+                                   id="male"
+                                   name="gender"
+                                   value="Male"
+                                   required>
+                            <label for="male">Male</label>
+
+                            <input type="radio"
+                                   id="female"
+                                   name="gender"
+                                   value="Female">
+                            <label for="female">Female</label>
+
+                            <input type="radio"
+                                   id="others"
+                                   name="gender"
+                                   value="Others">
+                            <label for="others">Others</label>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <label>
+                                <b>SKILLS :</b>
+                            </label>
+                        </td>
+
+                        <td>
+                            <input type="checkbox"
+                                   name="skills"
+                                   value="HTML">
+                            HTML
+
+                            <input type="checkbox"
+                                   name="skills"
+                                   value="CSS">
+                            CSS
+
+                            <input type="checkbox"
+                                   name="skills"
+                                   value="JavaScript">
+                            JavaScript
+
+                            <input type="checkbox"
+                                   name="skills"
+                                   value="Python">
+                            Python
+                        </td>
+                    </tr>
+
+
+                    <!-- Age -->
+                    <tr>
+                        <td>
+                            <label for="age">
+                                <b>AGE :</b>
+                            </label>
+                        </td>
+
+                        <td>
+                            <input type="number"
+                                   id="age"
+                                   name="age"
+                                   placeholder="Enter your age"
+                                   min="1"
+                                   max="100"
+                                   required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="dob">
+                                <b>DATE OF BIRTH :</b>
+                            </label>
+                        </td>
+
+                        <td>
+                            <input type="date"
+                                   id="dob"
+                                   name="dob"
+                                   required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="location">
+                                <b>LOCATION :</b>
+                            </label>
+                        </td>
+
+                        <td>
+                            <select id="location"
+                                    name="location"
+                                    required>
+
+                                <option value="">
+                                    -- Select Location --
+                                </option>
+
+                                <option value="Hyderabad">
+                                    Hyderabad
+                                </option>
+
+                                <option value="Bangalore">
+                                    Bangalore
+                                </option>
+
+                                <option value="Chennai">
+                                    Chennai
+                                </option>
+
+                                <option value="Mumbai">
+                                    Mumbai
+                                </option>
+
+                                <option value="Delhi">
+                                    Delhi
+                                </option>
+
+                                <option value="Pune">
+                                    Pune
+                                </option>
+
+                            </select>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <label for="resume">
+                                <b>UPLOAD RESUME :</b>
+                            </label>
+                        </td>
+
+                        <td>
+                            <input type="file"
+                                   id="resume"
+                                   name="resume"
+                                   accept=".pdf,.doc,.docx"
+                                   required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="intro">
+                                <b>INTRO ABOUT YOURSELF :</b>
+                            </label>
+                        </td>
+
+                        <td>
+                            <textarea id="intro"
+                                      name="intro"
+                                      rows="6"
+                                      cols="40"
+                                      placeholder="Write something about yourself..."
+                                      required></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+
+                        <td>
+                            <input type="checkbox"
+                                   id="agree"
+                                   name="agree"
+                                   required>
+
+                            <label for="agree">
+                                I agree that the above information is correct.
+                            </label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+
+                        <td>
+                            <button type="submit">
+                                Register
+                            </button>
+
+                            <button type="reset">
+                                Reset
+                            </button>
+                            <p>
+        Already have an account?
+        <a href="login.html">Click here to Login</a>
+    </p>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </form>
+
+    </fieldset>
+
