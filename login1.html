@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            display: flex;
+        }
+        .left-container{
+            height: 100vh;
+            width: 50%; 
+        }
+        .left-container img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .right-container{
+            height: 100vh;
+            width: 50%; 
+        }
+        .right-container{
+            background-color: beige;
+            height: 100vh;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+        .right-container-login{
+            height: auto;
+            width: 350px;
+            padding: 20px;
+            border: 10px  sandybrown;
+            border-style: groove;
+            text-align: center;
+            background-color: lightyellow;
+            
+        }
+        .right-container-login label{
+            display: inline-block;
+            font-style: italic;
+            margin: 10px;
+            font-weight: bold;
+
+
+        }
+
+        .right-container-login input[type="submit"],input[type = "reset"]{
+            padding: 5px;
+            margin-right: 20px;
+            margin-top: 10px;
+            font-weight: bold;
+            background-color: transparent;
+            background-color: beige;
+        }
+        .right-container-login h2{
+            text-transform:uppercase;
+        }
+        .right-container-login input{
+            border-color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-container">
+            <img src="bg.jpg" alt="">
+        </div>
+
+        <div class="right-container">
+            <div class="right-container-login">
+                <h2>login</h2>
+                    <form action="">
+                        <label for=""> USERNAME : </label>
+                        <input type="text" required>
+                        <label for="">PASSWORD : </label>
+                        <input type="password" required>
+                        <br>
+                        <input type="submit" value="login">
+                        <input type="reset" value="reset">
+                        
+                    </form>
+                    
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
